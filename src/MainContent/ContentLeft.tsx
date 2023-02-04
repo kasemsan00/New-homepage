@@ -1,9 +1,7 @@
-import mainContentImage from "../assets/images/image-web-3-desktop.jpg";
-
 export default function ContentLeft() {
     return (
         <>
-            <img className="main-content-image" src={mainContentImage} alt="1" />
+            <img className="main-content-image" src={"../../images/image-web-3-desktop.jpg"} alt="1" />
             <div className="main-content-detail">
                 <h1 className="main-content-title">The Bright Future of Web 3.0?</h1>
                 <div className="main-content-half">
