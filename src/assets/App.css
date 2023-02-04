@@ -2,7 +2,9 @@
     font-family: Inter;
     src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
-
+.hidden {
+    display: none;
+}
 body {
     background-color: hsl(36, 100%, 99%);
 }
@@ -18,13 +20,53 @@ body {
     height: 100vh;
     width: 100vh;
 }
-
+.hide-menu{
+    margin-right: -400px;
+}
+.menu-hamburger {
+    transition: 1s;
+    background-color: hsl(36, 100%, 99%);;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-family: Inter, serif;
+    text-align: left;
+    padding: 20px;
+    height: 100vh;
+}
+.menu-hamburger-button{
+    cursor: pointer;
+    right: 20px;
+}
+.menu-hamburger-close{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
 .menu-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
+.menu-list-hamburger {
+    font-family: Inter, serif;
+    text-align: left;
+    padding: 20px;
+    height: 100vh;
+}
+.menu-list-hamburger-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 5px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.menu-list-hamburger-item:hover {
+    color: hsl(5, 85%, 63%);
+}
 .menu-items {
     display: inline;
     margin: 20px;
@@ -64,6 +106,7 @@ body {
     width: 100%;
 }
 .article-item{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     width: 35%;
@@ -83,10 +126,14 @@ body {
     color: #c9c8cf;
 }
 .article-item-header{
+    cursor: pointer;
     text-align: left;
     font-family: Inter, serif;
     font-size: 14px;
     font-weight: 800;
+}
+.article-item-header:hover {
+    color: hsl(5, 85%, 63%)
 }
 .article-item-content{
     text-align: left;
